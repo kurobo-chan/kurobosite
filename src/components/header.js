@@ -9,7 +9,7 @@ export default function Home() {
     <header className="header partsGrid">
       <div className="inner">
         <div className="site">
-          <a href="index.html">KUROBO site</a>
+          <Link to={`/`}>KUROBO site</Link>
         </div>
         <button className="navbtn" onClick={navFunc}>
           <span className="navbtn-bar" />
