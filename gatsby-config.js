@@ -35,5 +35,19 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `KUROBO SITE`,
+        short_name: `KUROBO`,
+        start_url: `/`,
+        background_color: `#6f7372`,
+        theme_color: `#647356`,
+        display: `standalone`,
+        icon: `src/images/kurobo.svg`,
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }
