@@ -1,8 +1,6 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
-import styled from "@emotion/styled"
-import { css } from "@emotion/react"
+import { graphql} from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons"
 
@@ -278,13 +276,23 @@ export default function Home({ data, location }) {
                   <dd>
                     <ul className="link">
                       <li>
-                        <a href="#" className="github">
+                        <a
+                          href="https://github.com/kurobo-chan"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="github"
+                        >
                           <span className="sr-only">Github</span>
                           <FontAwesomeIcon icon={faGithub} />
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="twitter">
+                        <a
+                          href="https://twitter.com/kurobochan"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="twitter"
+                        >
                           <span className="sr-only">Twitter</span>
                           <FontAwesomeIcon icon={faTwitter} />
                         </a>

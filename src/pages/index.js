@@ -1,8 +1,6 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
-import styled from "@emotion/styled"
-import { css } from "@emotion/react"
+import {  StaticImage } from "gatsby-plugin-image"
+import { Timeline } from "react-twitter-widgets"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -16,7 +14,7 @@ export default function Home() {
           <div className="hero-main">
             <StaticImage
               src="../images/top.jpg"
-              alt="A dinosaur"
+              alt=""
               placeholder="blurred"
               layout="fullWidth"
             />
@@ -262,7 +260,20 @@ export default function Home() {
           <div className="grid12">
             <section className="RecentTweets">
               <h2>Recent Tweets</h2>
-              <div className="tweet-box">tweetbox</div>
+              <div className="tweet-box">
+                <Timeline
+                  dataSource={{
+                    sourceType: "profile",
+                    screenName: "kurobochan",
+                    id: "1118163987017785347",
+                  }}
+                  options={{
+                    lang: "ja",
+                    height: "400",
+                    theme: "dark",
+                  }}
+                />
+              </div>
             </section>
           </div>
         </main>

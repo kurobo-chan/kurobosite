@@ -26,7 +26,7 @@ export default function Home({ data, location, pageContext }) {
           <div className="hero-main">
             <StaticImage
               src="../images/work.jpg"
-              alt="A dinosaur"
+              alt=""
               placeholder="blurred"
               layout="fullWidth"
             />

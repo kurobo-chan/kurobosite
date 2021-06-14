@@ -9,17 +9,23 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default function Home({ data, location, pageContext }) {
   return (
     <Layout>
+      <SEO
+        pagetitle="作品一覧"
+        pagedesc="これまでの制作物"
+        pagepath={location.pathname}
+      />
       <div className="works" id="pagetop">
         <div className="hero partsGrid">
           <div className="hero-placeholder" />
           <div className="hero-main">
             <StaticImage
               src="../images/work.jpg"
-              alt="A dinosaur"
+              alt=""
               placeholder="blurred"
               layout="fullWidth"
             />
