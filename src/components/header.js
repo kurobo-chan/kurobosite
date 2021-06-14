@@ -34,7 +34,13 @@ export default function Home() {
             </Link>
           </li>
           <li>
-            <a href="#">BLOG</a>
+            <a
+              href="https://kuroboblog.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              BLOG
+            </a>
           </li>
         </ul>
       </nav>
