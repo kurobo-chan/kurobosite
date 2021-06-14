@@ -28,7 +28,6 @@ export default function Home({ data, location }) {
               alt=""
               placeholder="blurred"
               layout="fullWidth"
-              formats={["auto", "webp", "avif"]}
             />
           </div>
           <div className="title">

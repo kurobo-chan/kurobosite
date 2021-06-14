@@ -19,13 +19,19 @@ export default function Home() {
       <nav className="nav">
         <ul>
           <li>
-            <Link to={`/`}>HOME</Link>
+            <Link to={`/`} onClick={navFunc}>
+              HOME
+            </Link>
           </li>
           <li>
-            <Link to={`/about/`}>ABOUT</Link>
+            <Link to={`/about/`} onClick={navFunc}>
+              ABOUT
+            </Link>
           </li>
           <li>
-            <a href="work.html">WORKS</a>
+            <Link href={`/works/`} onClick={navFunc}>
+              WORKS
+            </Link>
           </li>
           <li>
             <a href="#">BLOG</a>

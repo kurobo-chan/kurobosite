@@ -269,6 +269,8 @@ body {
   font-size: var(--f4);
 }
 .hero-main *,
+.hero-main img,
+.hero-main::after,
 .hero-main,
 .hero-main::before,
 .hero-main::after {
@@ -282,12 +284,16 @@ body {
   background-position: center;
   background-size: cover;
 }
-
+.hero-main *,
+.hero-main img,
+.hero-main::after {
+	z-index: -2;
+}
 .hero-main::before {
   background: transparent linear-gradient(58deg, #323a2b 0%, #4c5741 40%, #647356 100%) 0% 0% no-repeat padding-box;
   content: "";
   opacity: 0.8;
-  mix-blend-mode: hue;
+  mix-blend-mode:multiply;
 }
 
 .hero-main::after {
@@ -321,7 +327,7 @@ body {
 }
 
 .works .hero-main {
-  background: url(/images/work.jpg) center center;
+  background: none;
 }
 
 .layout {
@@ -528,7 +534,15 @@ body {
 .work .card > * {
   grid-column: 1/-1;
 }
-
+.pagenation{
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: space-between;
+}
+.pagenation a{
+	display: flex;
+	column-gap: 1em;
+}
 .footer {
   row-gap: var(--f6);
   box-sizing: border-box;

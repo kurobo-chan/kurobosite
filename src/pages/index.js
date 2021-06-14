@@ -16,10 +16,9 @@ export default function Home() {
           <div className="hero-main">
             <StaticImage
               src="../images/top.jpg"
-              alt=""
+              alt="A dinosaur"
               placeholder="blurred"
               layout="fullWidth"
-              formats={["auto", "webp", "avif"]}
             />
           </div>
           <div className="grid12">

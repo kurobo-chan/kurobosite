@@ -16,8 +16,8 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -49,5 +49,20 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-source-microcms",
+      options: {
+        apiKey: process.env.microCMS_API_KEY,
+        serviceId: "kurobochan-portfolio",
+        apis: [
+          {
+            endpoint: "portfolio",
+          },
+          {
+            endpoint: "category",
+          },
+        ],
+      },
+    },
   ],
 }
